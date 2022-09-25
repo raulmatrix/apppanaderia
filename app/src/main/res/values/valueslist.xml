@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categoriaProducto">
+        <item>Pan</item>
+        <item>Queques</item>
+        <item>Tortas</item>
+        <item>Otros</item>
+    </string-array>
+    <string-array name="presentacion">
+        <item>Unidad</item>
+        <item>Grs</item>
+        <item>Kgs</item>
+        <item>Otros</item>
+    </string-array>
+
+
+</resources>
