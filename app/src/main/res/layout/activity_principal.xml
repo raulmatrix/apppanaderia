@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="producto"
     tools:context=".Principal">
 
     <TextView
@@ -20,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/btn_user"
         android:layout_width="114dp"
         android:layout_height="114dp"
         android:layout_marginStart="60dp"
@@ -32,7 +33,7 @@
         app:srcCompat="@mipmap/ic_programador" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/btn_pedido"
         android:layout_width="114dp"
         android:layout_height="114dp"
         android:layout_marginTop="108dp"
@@ -40,29 +41,36 @@
         android:backgroundTint="#F85F6A"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_user"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         app:srcCompat="@mipmap/ic_listadequehaceres" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/btn_producto"
         android:layout_width="114dp"
         android:layout_height="114dp"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="76dp"
         android:backgroundTint="#F85F6A"
+        android:onClick="producto"
         android:scaleType="fitCenter"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        app:srcCompat="@mipmap/ic_carritodecompras"
-        tools:layout_editor_absoluteX="60dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_user"
+        app:srcCompat="@mipmap/ic_carritodecompras" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/btn_reporte"
         android:layout_width="114dp"
         android:layout_height="114dp"
         android:layout_marginTop="76dp"
+        android:layout_marginEnd="60dp"
         android:backgroundTint="#F85F6A"
         android:scaleType="fitCenter"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
-        app:srcCompat="@mipmap/ic_graficocircular"
-        tools:layout_editor_absoluteX="237dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_producto"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pedido"
+        app:srcCompat="@mipmap/ic_graficocircular" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
