@@ -71,7 +71,6 @@
         android:layout_marginTop="40dp"
         android:layout_marginRight="20dp"
         android:backgroundTint="#E45C31"
-        android:onClick="ingresar"
         android:text="Ingresar" />
 
     <LinearLayout
